@@ -1,0 +1,72 @@
+header {
+    color:#ffffff;
+    background-color: #00246B;
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+    padding: 18px; /* gör header "bandet" längre till nedsidan */
+}
+
+.navbar {
+    background-color:#f3f3fa;
+    height: 36px;
+}
+
+.navbar ul {
+    list-style-type: none; /* taear bort punkterna från listan */
+    padding: 0; /* flyttar orden i navven lite åt vänster*/
+    margin: 0; /* fixar mellanrummet mellan headern och naven */
+    display: flex; /* radar upp listan horisontellt till navven*/
+    justify-content: center; /* centrerar länkarna */
+    gap: 100px; /* avstånd mellan länkarna */
+}
+
+.navbar a {
+    text-decoration: none; /* Ta bort understrykning från länkar */
+    color:#00246B;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.navbar a:hover {
+    color: rgb(0, 119, 255); /* Ändrar färg vid hover */
+}
+
+main {
+    display: flex; /* lägger bilden och täxten brevid varandra  */
+}
+
+.omföretaget {
+    width: 55%;
+    background-color: #ffffff;
+    padding: 20px; /* Padding så texten inte går från kant till kant */
+    border-radius: 6px; /* (syndes innan jag fixade gap:et) bara lite lite små runda hörn */
+    box-shadow: 1px 1px 5px rgba(160, 152, 152, 0.2); /* skugga runt texten så jag kan se vart rutan tar slut */
+    font-family: "Share Tech Mono", monospace;
+}
+
+.vänster {
+    width: 55%;
+    background-color: #ffffff;
+    padding: 20px; /* Padding så texten inte går från kant till kant */
+    border-radius: 6px; /* (syndes innan jag fixade gap:et) bara lite lite små runda hörn */
+    box-shadow: 1px 1px 5px rgba(160, 152, 152, 0.2); /* skugga runt texten så jag kan se vart rutan tar slut */
+    font-family: "Share Tech Mono", monospace;
+}
+
+.underbild {
+    width: 55%;
+    background-color: #ffffff;
+    padding: 20px; /* Padding så texten inte går från kant till kant */
+    border-radius: 6px; /* (syndes innan jag fixade gap:et) bara lite lite små runda hörn */
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2); /* skugga runt texten så jag kan se vart rutan tar slut */
+    font-family: "Share Tech Mono", monospace;
+}
+
+.andrahalvan{
+    display: flex;
+}
+
+.andrarubrik{
+    justify-content: left;
+}
