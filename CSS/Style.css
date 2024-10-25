@@ -1,14 +1,22 @@
 header {
-    color:#ffffff;
-    background-color: #00246B;
+    color:#000000;
+    background-color: #ffffff;
     text-align: center;
     font-family: "Share Tech Mono", monospace;
     padding: 18px; /* gör header "bandet" längre till nedsidan */
 }
+body{
+    background-image: url(../Bilder/pexels-danbuilds-633409.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-.navbar {
-    background-color:#f3f3fa;
-    height: 36px;
+.navbar { 
+    width: 100%;
+    background-color:#ffffff;
+    height: 40px;
 }
 
 .navbar ul {
@@ -22,51 +30,71 @@ header {
 
 .navbar a {
     text-decoration: none; /* Ta bort understrykning från länkar */
-    color:#00246B;
+    color:#000000;
     font-size: 20px;
     font-weight: bolder;
     font-family: "Share Tech Mono", monospace;
 }
 
 .navbar a:hover {
-    color: rgb(0, 119, 255); /* Ändrar färg vid hover */
+    
+    text-decoration: underline; /* linje under orden */
+    color: rgb(179, 179, 179); /* Ändrar färg vid hover */
 }
 
 main {
-    display: flex; /* lägger bilden och täxten brevid varandra  */
+    display: flex; /* lägger bilden och texten brevid varandra  */
+    flex-wrap: wrap;
 }
+
+.flex-item {
+    width: 50%;
+
+}
+
+
+
 
 .omföretaget {
+    color:#9d9797;
     width: 55%;
-    background-color: #ffffff;
     padding: 20px; /* Padding så texten inte går från kant till kant */
     border-radius: 6px; /* (syndes innan jag fixade gap:et) bara lite lite små runda hörn */
-    box-shadow: 1px 1px 5px rgba(160, 152, 152, 0.2); /* skugga runt texten så jag kan se vart rutan tar slut */
+    box-shadow: 1px 1px 5px rgba(160, 152, 152, 0); /* skugga runt texten så jag kan se vart rutan tar slut (tog bort)*/
     font-family: "Share Tech Mono", monospace;
 }
 
-.vänster {
-    width: 55%;
-    background-color: #ffffff;
-    padding: 20px; /* Padding så texten inte går från kant till kant */
-    border-radius: 6px; /* (syndes innan jag fixade gap:et) bara lite lite små runda hörn */
-    box-shadow: 1px 1px 5px rgba(160, 152, 152, 0.2); /* skugga runt texten så jag kan se vart rutan tar slut */
-    font-family: "Share Tech Mono", monospace;
-}
-
-.underbild {
-    width: 55%;
-    background-color: #ffffff;
-    padding: 20px; /* Padding så texten inte går från kant till kant */
-    border-radius: 6px; /* (syndes innan jag fixade gap:et) bara lite lite små runda hörn */
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2); /* skugga runt texten så jag kan se vart rutan tar slut */
-    font-family: "Share Tech Mono", monospace;
-}
 
 .andrahalvan{
+    color:#ffffff;
     display: flex;
+    font-family: "Share Tech Mono", monospace;
 }
 
 .andrarubrik{
+
+    color:#ffffff;
     justify-content: left;
+    font-family: "Share Tech Mono", monospace;
+}
+.länk3 {
+    margin-left: 100%;  /* Flyttar länken "Info" längst till höger */
+}
+
+.länk1 {
+    margin-inline-start: -150%;  /* Flyttar länken "Info" längst till höger */
+}
+.andrarubrik{
+    text-align: center;
+    
+}
+
+
+.färg{
+    color:#a49b9b
+}
+
+.andra-bild{
+    margin-top: -4.2%;
+    width: 52.1%;
 }
