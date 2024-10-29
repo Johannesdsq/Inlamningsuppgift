@@ -25,7 +25,7 @@ body{
     margin: 0; /* fixar mellanrummet mellan headern och naven */
     display: flex; /* radar upp listan horisontellt till navven*/
     justify-content: center; /* centrerar länkarna */
-    gap: 100px; /* avstånd mellan länkarna */
+    gap: 160px; /* avstånd mellan länkarna */
 }
 
 .navbar a {
@@ -58,7 +58,7 @@ main {
 .omföretaget {
     color:#000000;
     width: 55%;
-    padding: 20px; /* Padding så texten inte går från kant till kant */
+    padding: 20px; 
     border-radius: 6px; /* (syndes innan jag fixade gap:et) bara lite lite små runda hörn */
     box-shadow: 1px 1px 5px rgba(160, 152, 152, 0); /* skugga runt texten så jag kan se vart rutan tar slut (tog bort)*/
     font-family: "Share Tech Mono", monospace;
@@ -86,11 +86,12 @@ main {
 
 .foten{
     display: flex;
-    justify-content: space-between; 
     padding: 20px; 
     background-color: #000000; 
     color: white;
 }
+
+
 .snabblänkar{
 
     list-style-type: none;   /* tar bort list prickarna */
@@ -110,13 +111,49 @@ main {
 
 
 .ruta {
-    border: 1px solid #0000006b; /* ram */
-    border-radius: 5px; /* Rundade hörn */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lätt skugga */
-    padding: 10px; /* Utrymme inuti fälten */
-    width: 100%; /* Full bredd */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Mjuk övergång för hover-effekter */
+    border: 1px solid #0000006b; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    width: 100%; 
 }
+
+
+table {
+
+    font-family: "Share Tech Mono", monospace;
+    width: 90%; 
+    margin: 50px auto; /* Centrera tabellen horisontellt */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.548);
+    border-collapse: collapse;
+
+
+}
+
+th {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    padding: 35px; 
+    text-align: center;
+    font-size: 1.5em; 
+    border-bottom: 2px solid #000000;
+}
+
+
+td {
+    border: 1px solid #ddd; /* Grå kantlinje */
+    padding: 20px; 
+}
+
+.kdp{
+    margin-top: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+
 
 
 /* submitknapp från webleb */
