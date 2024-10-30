@@ -26,30 +26,31 @@
 
         
         <form class="formulär">
-            <h2>Anmäl dig här</h2>
+            <h2 class="anmal">Anmäl dig här</h2>
             <label for="name">Namn:</label>
-            <input  class="ruta" type="text" name="name" placeholder="För och efternamn!" required><!-- name="name" för java script-->
+            <input  class="ruta" type="text" id="name" name="name" placeholder="För och efternamn!" required><!-- name="name" för java script-->
             <br><br>
             
             <label for="email">E-postadress:</label>
-            <input  class="ruta" type="email" name="email" placeholder="E-postadress" required><!-- name="email" för java script-->
+            <input  class="ruta" type="email" id="email" name="email" placeholder="E-postadress" required><!-- name="email" för java script-->
             <br><br>
             
             <label for="phone">Telefonnummer:</label>
-            <input class="ruta" type="number" name="phone" placeholder="tex.0731231234" required> <!-- name="phone" för java script-->
+            <input class="ruta" type="number" id="phone" name="phone" placeholder="tex.0731231234" required> <!-- name="phone" för java script-->
             <br><br>
             
             <label for="course">Kursval:</label>
             <select class="ruta" id="course" name="course" required> <!-- name="phone" och id="course"  för java script-->
+                <option value="" disabled selected>Välj en krus</option>
                 <option value="HTML/CSS">HTML/CSS</option>
                 <option value="JavaScript">JavaScript</option>
                 <option value="UX-Design">UX-Design</option>
-                <option value="ai">Artificiell Intelligens</option>
+                <option value="AI">Artificiell Intelligens</option>
             </select>
             <br><br>
-            
+        
             <label for="comments">Ytterligare kommentarer:</label>
-            <textarea class="ruta" name="comments" placeholder="Övriga kommentarer" rows="1" cols="50"></textarea> <!--  "textarea"expanderad inputruta -->
+            <textarea id="comments" class="ruta" name="comments" placeholder="Övriga kommentarer" rows="1" cols="50"></textarea> <!--  "textarea"expanderad inputruta -->
             <br><br>  <!-- name="comments" för java script-->
             
             <button class="btn" type="submit">
